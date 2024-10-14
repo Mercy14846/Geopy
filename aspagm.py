@@ -2,7 +2,7 @@ import requests
 import pandas as pd
 
 # Google Maps API Key (replace 'YOUR_API_KEY' with your actual key)
-API_KEY = 'AIzaSyDaxRAEa1zgrxuLNBQ4mVVELvXmFHCyHFU'
+API_KEY = 'API_KEY'
 
 # Function to get address using Google Maps Geocoding API
 def get_address_from_google_maps(lat, lon, api_key=API_KEY):
