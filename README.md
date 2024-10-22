@@ -39,7 +39,7 @@ Example CSV:
 
 2. Run the Script:
 Replace the path to your CSV file in the script and run it:
-```
+```bash
 python reverse_geocode_osm.py
 ```
 The script will fetch addresses using the OSM Nominatim API and update your CSV file with the results.
@@ -50,7 +50,7 @@ The script will fetch addresses using the OSM Nominatim API and update your CSV 
 
 ## Example Code
 python
-```
+```python
 import pandas as pd
 import requests
 import time
@@ -85,8 +85,8 @@ df.to_csv('updated_file.csv', index=False)
 *SSL Errors*
 If you encounter SSL errors, you can switch to using HTTP instead of HTTPS, or add retries to the requests with a delay.
 
-Rate Limiting
+## Rate Limiting
 The Nominatim API has rate limits. To avoid hitting those limits, add a `time.sleep(1)` to pause between requests.
 
-License
+## License
 This project is licensed under the [MIT License] - see the (LICENSE) file for details.
