@@ -39,7 +39,7 @@ Example CSV:
 
 2. Run the Script:
 Replace the path to your CSV file in the script and run it:
-```bash
+```python
 python reverse_geocode_osm.py
 ```
 The script will fetch addresses using the OSM Nominatim API and update your CSV file with the results.
