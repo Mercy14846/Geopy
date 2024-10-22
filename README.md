@@ -30,9 +30,12 @@ pip install pandas requests
 - `lon` (longitude)
   
 Example CSV:
-ID	lat	lon	Address
-MLM00061233	15.167	-7.283	NaN
-SF000225210	33.680	19.320	NaN
+<!-- prettier-ignore-start -->
+| ID | lat | lon	| Address |
+|----|-----|------|---------|
+| MLM00061233 | 15.167 | -7.283 | NaN |
+| SF000225210	| 33.680 | 19.320	| NaN |
+<!-- prettier-ignore-end -->
 
 2. Run the Script:
 Replace the path to your CSV file in the script and run it:
