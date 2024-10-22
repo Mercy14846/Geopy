@@ -11,19 +11,18 @@ This project demonstrates how to use the OpenStreetMap Nominatim API to perform 
 - Python 3.x
 - The following Python libraries:
 - - `requests`
--- `pandas`
-Installation
-Clone the repository:
+- - `pandas`
 
-bash
-Copy code
+## Installation
+1. Clone the repository:
+```
 git clone https://github.com/yourusername/yourprojectname.git
 cd yourprojectname
-Install the required dependencies:
-
-bash
-Copy code
+```
+2. Install the required dependencies:
+```
 pip install pandas requests
+```
 How to Use
 Prepare your CSV file: Ensure your CSV file has at least the following columns:
 
