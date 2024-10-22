@@ -2,16 +2,16 @@
 This project demonstrates how to use the OpenStreetMap Nominatim API to perform reverse geocoding, converting latitude and longitude coordinates into human-readable addresses, and update a CSV file with this information.
 
 ## Features
-- Takes a CSV file containing lat and lon coordinates.
+- Takes a CSV file containing `lat` and `lon` coordinates.
 - Uses the Nominatim API to fetch addresses for each coordinate pair.
 - Updates the CSV file by adding the corresponding address in English.
 - Handles errors such as network issues or SSL failures.
 
-Requirements
-Python 3.x
-The following Python libraries:
-requests
-pandas
+## Requirements
+- Python 3.x
+- The following Python libraries:
+- - `requests`
+-- `pandas`
 Installation
 Clone the repository:
 
