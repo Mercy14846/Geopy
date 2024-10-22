@@ -50,7 +50,7 @@ The script will fetch addresses using the OSM Nominatim API and update your CSV 
 
 ## Example Code
 python
-```python
+```py
 import pandas as pd
 import requests
 import time
