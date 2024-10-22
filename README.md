@@ -15,7 +15,7 @@ This project demonstrates how to use the OpenStreetMap Nominatim API to perform 
 
 ## Installation
 1. Clone the repository:
-```py
+```bash
 git clone https://github.com/yourusername/yourprojectname.git
 cd yourprojectname
 ```
