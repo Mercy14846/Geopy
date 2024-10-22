@@ -20,7 +20,7 @@ git clone https://github.com/yourusername/yourprojectname.git
 cd yourprojectname
 ```
 2. Install the required dependencies:
-```py
+```bash
 pip install pandas requests
 ```
 
