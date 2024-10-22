@@ -23,32 +23,31 @@ cd yourprojectname
 ```
 pip install pandas requests
 ```
-How to Use
-Prepare your CSV file: Ensure your CSV file has at least the following columns:
 
-lat (latitude)
-lon (longitude)
+## How to Use
+1. Prepare your CSV file: Ensure your CSV file has at least the following columns:
+- `lat` (latitude)
+- `lon` (longitude)
+  
 Example CSV:
-
 ID	lat	lon	Address
 MLM00061233	15.167	-7.283	NaN
 SF000225210	33.680	19.320	NaN
-Run the Script:
 
+2. Run the Script:
 Replace the path to your CSV file in the script and run it:
-
-bash
-Copy code
+```
 python reverse_geocode_osm.py
+```
 The script will fetch addresses using the OSM Nominatim API and update your CSV file with the results.
 
-Handling Errors: If you encounter an SSL error or network issue, the script retries the request up to 3 times with a delay.
+3. Handling Errors: If you encounter an SSL error or network issue, the script retries the request up to 3 times with a delay.
 
-Output: The script will save the updated CSV file with the fetched addresses.
+4. Output: The script will save the updated CSV file with the fetched addresses.
 
-Example Code
+## Example Code
 python
-Copy code
+```
 import pandas as pd
 import requests
 import time
@@ -77,12 +76,14 @@ df['Address'] = df.apply(lambda row: get_address_from_osm(row['lat'], row['lon']
 
 # Save the updated CSV file
 df.to_csv('updated_file.csv', index=False)
-Troubleshooting
-SSL Errors
+```
+
+## Troubleshooting
+*SSL Errors*
 If you encounter SSL errors, you can switch to using HTTP instead of HTTPS, or add retries to the requests with a delay.
 
 Rate Limiting
-The Nominatim API has rate limits. To avoid hitting those limits, add a time.sleep(1) to pause between requests.
+The Nominatim API has rate limits. To avoid hitting those limits, add a `time.sleep(1)` to pause between requests.
 
 License
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the [MIT License] - see the (LICENSE) file for details.
