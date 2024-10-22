@@ -1,4 +1,4 @@
-Reverse Geocoding with OpenStreetMap (OSM) and Python
+# Reverse Geocoding with OpenStreetMap (OSM) and Python
 This project demonstrates how to use the OpenStreetMap Nominatim API to perform reverse geocoding, converting latitude and longitude coordinates into human-readable addresses, and update a CSV file with this information.
 
 Features
