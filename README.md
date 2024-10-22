@@ -1,5 +1,5 @@
 # Reverse Geocoding with OpenStreetMap (OSM) and Python
-This project demonstrates how to use the OpenStreetMap Nominatim API to perform reverse geocoding, converting latitude and longitude coordinates into human-readable addresses, and update a CSV file with this information.
+This project demonstrates using the OpenStreetMap Nominatim API to perform reverse geocoding, converting latitude and longitude coordinates into human-readable addresses, and updating a CSV file with this information.
 
 ## Features
 - Takes a CSV file containing `lat` and `lon` coordinates.
@@ -14,22 +14,22 @@ This project demonstrates how to use the OpenStreetMap Nominatim API to perform 
 - - `pandas`
 
 ## Installation
-1. Clone the repository:
+1. **Clone the repository:**
 ```bash
 git clone https://github.com/yourusername/yourprojectname.git
 cd yourprojectname
 ```
-2. Install the required dependencies:
+2. **Install the required dependencies:**
 ```bash
 pip install pandas requests
 ```
 
 ## How to Use
-1. Prepare your CSV file: Ensure your CSV file has at least the following columns:
+1. **Prepare your CSV file:** Ensure your CSV file has at least the following columns:
 - `lat` (latitude)
 - `lon` (longitude)
   
-Example CSV:
+**Example CSV:**
 <!-- prettier-ignore-start -->
 | ID | lat | lon	| Address |
 |----|-----|------|---------|
@@ -37,19 +37,18 @@ Example CSV:
 | SF000225210	| 33.680 | 19.320	| NaN |
 <!-- prettier-ignore-end -->
 
-2. Run the Script:
+2. **Run the Script:**
 Replace the path to your CSV file in the script and run it:
 ```python
 python reverse_geocode_osm.py
 ```
 The script will fetch addresses using the OSM Nominatim API and update your CSV file with the results.
 
-3. Handling Errors: If you encounter an SSL error or network issue, the script retries the request up to 3 times with a delay.
+3. **Handling Errors:** If you encounter an SSL error or network issue, the script retries the request up to 3 times with a delay.
 
-4. Output: The script will save the updated CSV file with the fetched addresses.
+4. **Output:** The script will save the updated CSV file with the fetched addresses.
 
 ## Example Code
-python
 ```py
 import pandas as pd
 import requests
